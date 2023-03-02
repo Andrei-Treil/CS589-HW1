@@ -327,7 +327,7 @@ plt.ylabel("Accuracy Frequency")
 plt.xlabel("Accuracy")
 plt.title("Decision Tree on Training Data")
 plt.text(0.98,17.5,f'mean:{np.mean(accuracy_train):.2f} sd:{np.std(accuracy_train):.2f}')
-plt.show
+plt.show()
 
 # %% [markdown]
 # **Q2.2 (12 Points)** In the second histogram, you should show the accuracy distribution when
@@ -345,7 +345,7 @@ plt.ylabel("Accuracy Frequency")
 plt.xlabel("Accuracy")
 plt.title("Decision Tree on Test Data")
 plt.text(0.885,17.5,f'mean:{np.mean(accuracy_test):.2f} sd:{np.std(accuracy_test):.2f}')
-plt.show
+plt.show()
 
 # %% [markdown]
 # **Q2.3 (12 Points)** Explain intuitively why each of these histograms looks the way they do. Is
@@ -388,8 +388,8 @@ plt.hist(accuracy_train_gini,bins=num_bins,edgecolor='white',linewidth=1)
 plt.ylabel("Accuracy Frequency")
 plt.xlabel("Accuracy")
 plt.title("Decision Tree on Training Data (Gini)")
-plt.text(0.68,17.5,f'mean:{np.mean(accuracy_train_gini):.2f} sd:{np.std(accuracy_train_gini):.2f}')
-plt.show
+plt.text(0.64,12,f'mean:{np.mean(accuracy_train_gini):.2f} sd:{np.std(accuracy_train_gini):.2f}')
+plt.show()
 
 # %%
 num_bins = len(set(accuracy_test_gini))
@@ -397,8 +397,8 @@ plt.hist(accuracy_test_gini,bins=num_bins,edgecolor='white',linewidth=1)
 plt.ylabel("Accuracy Frequency")
 plt.xlabel("Accuracy")
 plt.title("Decision Tree on Test Data (Gini)")
-plt.text(0.66,17.5,f'mean:{np.mean(accuracy_test_gini):.2f} sd:{np.std(accuracy_test_gini):.2f}')
-plt.show
+plt.text(0.66,10,f'mean:{np.mean(accuracy_test_gini):.2f} sd:{np.std(accuracy_test_gini):.2f}')
+plt.show()
 
 # %% [markdown]
 # Explain intuitively why each of these histograms looks the way they do. Is
@@ -443,8 +443,8 @@ plt.hist(accuracy_train_depth,bins=num_bins,edgecolor='white',linewidth=1)
 plt.ylabel("Accuracy Frequency")
 plt.xlabel("Accuracy")
 plt.title("Decision Tree on Training Data (Depth = 0.85)")
-plt.text(0.985,16,f'mean:{np.mean(accuracy_train_depth):.2f} sd:{np.std(accuracy_train_depth):.2f}')
-plt.show
+plt.text(0.98,16,f'mean:{np.mean(accuracy_train_depth):.2f} sd:{np.std(accuracy_train_depth):.2f}')
+plt.show()
 
 # %%
 num_bins = len(set(accuracy_test_depth))
@@ -452,8 +452,8 @@ plt.hist(accuracy_test_depth,bins=num_bins,edgecolor='white',linewidth=1)
 plt.ylabel("Accuracy Frequency")
 plt.xlabel("Accuracy")
 plt.title("Decision Tree on Test Data (Depth = 0.85)")
-plt.text(0.88,30,f'mean:{np.mean(accuracy_test_depth):.2f} sd:{np.std(accuracy_test_depth):.2f}')
-plt.show
+plt.text(0.89,17.5,f'mean:{np.mean(accuracy_test_depth):.2f} sd:{np.std(accuracy_test_depth):.2f}')
+plt.show()
 
 # %% [markdown]
 # Explain intuitively why each of these histograms looks the way they do. Is
